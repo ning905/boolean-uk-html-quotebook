@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Rock+Salt&family=Tapestry&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5rem;
+}
+
+h1,
+h2 {
+    font-family: 'Tapestry', cursive;
+}
+
+h2 {
+    margin: 1.5rem 0;
+}
+
+.content {
+    font-family: 'Courgette', cursive;
+
+    font-size: 1.3rem;
+}
+
+.author {
+    font-family: 'Rock Salt', cursive;
+
+    font-size: 0.7rem;
+}
+
+header {
+    background-color: #125B50;
+    color: #FAF5E4;
+
+    padding: 1rem 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        ". film-quotes ."
+        ". drama-quotes ."
+        ". book-quotes .";
+    grid-template-columns: 1fr 55ch 1fr;
+}
+
+.film-quotes {
+    grid-area: film-quotes;
+}
+
+.film-quotes .quote-box {
+    background-color: #96CEB4;
+}
+
+.drama-quotes {
+    grid-area: drama-quotes;
+}
+
+.drama-quotes .quote-box {
+    background-color: #85C88A;
+}
+
+.book-quotes {
+    grid-area: book-quotes;
+}
+
+.book-quotes .quote-box {
+    background-color: #C3E5AE;
+}
+
+.quote-box {
+    padding: 1.5rem;
+    margin: 2rem 0;
+
+    border-radius: 0.3rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem #00000020;
+}
+
+.quote-box .content {
+    text-align: justify;
+
+    margin-bottom: 1rem;
+}
+
+.quote-box .author {
+    text-align: right;
+    font-variant: small-caps;
+}
