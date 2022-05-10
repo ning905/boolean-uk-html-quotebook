@@ -79,6 +79,10 @@ main {
     box-shadow: 0.25rem 0.25rem 0.5rem #00000020;
 }
 
+.quote-box:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem #00000020;
+}
+
 .quote-box .content {
     text-align: justify;
 
